@@ -23,10 +23,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png",
-      "bundler":"metro"
+      "bundler": "metro"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/NotoSans_Condensed-Regular.ttf",
+          "./assets/fonts/NotoSans-Regular.ttf"
+        ]
+        }
+      ]
     ],
     "scheme": "odontoprev-app-scheme"
   }
