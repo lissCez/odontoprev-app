@@ -1,6 +1,7 @@
 
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { Link } from 'expo-router';
 
 const logoOdpv = require("../assets/logoodpv.png");
 const menu = require("../assets/menu.jpg");
@@ -8,7 +9,10 @@ const HeaderWithMenu = () => {
   return (
     <View style={styles.headerContainer}>
         <Image source={logoOdpv} style={styles.imageLogo}></Image>
-        <Image source={menu} style={styles.menuIcon}></Image>
+
+        <Link href='/Menu'>
+            <Image source={menu} style={styles.menuIcon}></Image>
+        </Link>
     </View>
   )
 }
