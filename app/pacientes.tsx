@@ -1,0 +1,27 @@
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import HeaderWithMenu from '../components/headerMenu'
+
+const Pacientes = () => {
+  return (
+    <View>
+      <HeaderWithMenu/>
+
+        <Text style={styles.pacienteTitle}>Pacientes</Text>
+    </View>
+  )
+}
+
+export default Pacientes
+
+const styles = StyleSheet.create({
+    pacienteTitle:{
+        fontFamily: 'NotoSans_Condensed',
+        fontWeight: 500,
+        fontSize: 24,
+        lineHeight: 29,
+        color: '#0066FF',
+        marginTop: 19,
+        marginLeft: 38
+    }
+})

@@ -8,6 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <HeaderWithMenu/>
       <Link href='/perfil'>perfil</Link>
+      <Link href='/pacientes'>pacientes</Link>
       
       <StatusBar style="auto" />
     </View>
