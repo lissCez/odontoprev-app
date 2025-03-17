@@ -3,20 +3,20 @@ import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 
 const logoOdpv = require("../assets/logoodpv.png");
-const menu = require("../assets/menu.jpg");
-const HeaderWithMenu = () => {
+const menu = require("../assets/menuX.png");
+const HeaderWithoutMenu = () => {
     return (
         <View style={styles.headerContainer}>
             <Image source={logoOdpv} style={styles.imageLogo}></Image>
 
-            <Link href='/menu'>
+            <Link href='/'>
                 <Image source={menu} style={styles.menuIcon}></Image>
             </Link>
         </View>
     )
 }
 
-export default HeaderWithMenu
+export default HeaderWithoutMenu
 
 const styles = StyleSheet.create({
     headerContainer: {
