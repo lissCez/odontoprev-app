@@ -1,20 +1,20 @@
 
-import { Image, StyleSheet, View } from 'react-native'
-import React from 'react'
 import { Link } from 'expo-router';
+import React from 'react';
+import { Image, StyleSheet, View } from 'react-native';
 
 const logoOdpv = require("../assets/logoodpv.png");
 const menu = require("../assets/menu.jpg");
 const HeaderWithMenu = () => {
-  return (
-    <View style={styles.headerContainer}>
-        <Image source={logoOdpv} style={styles.imageLogo}></Image>
+    return (
+        <View style={styles.headerContainer}>
+            <Image source={logoOdpv} style={styles.imageLogo}></Image>
 
-        <Link href='/Menu'>
-            <Image source={menu} style={styles.menuIcon}></Image>
-        </Link>
-    </View>
-  )
+            <Link href='/menu'>
+                <Image source={menu} style={styles.menuIcon}></Image>
+            </Link>
+        </View>
+    )
 }
 
 export default HeaderWithMenu
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         flex: 0,
         flexDirection: 'row',
         alignItems: 'flex-start',
-        justifyContent:'space-between',
+        justifyContent: 'space-between',
         backgroundColor: 'white',
         width: '100%',
         height: 66,
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 4, height: 4 }, // Deslocamento X e Y
         shadowOpacity: 0.26,
         shadowRadius: 3,
-        elevation: 3, 
+        elevation: 3,
 
     },
     imageLogo: {
