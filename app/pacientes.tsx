@@ -6,8 +6,14 @@ const Pacientes = () => {
   return (
     <View>
       <HeaderWithMenu/>
-
         <Text style={styles.pacienteTitle}>Pacientes</Text>
+        <PatientCard
+            nome="João da Silva"
+            sexo="Masculino"
+            naturalidade="Brasileiro"
+            localNascimento="São Paulo, SP"
+            dataNascimento="10/05/1990"
+        /> 
     </View>
   )
 }
