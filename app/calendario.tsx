@@ -1,12 +1,17 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import CalendarComponent from '../components/c_calendario';
+import HeaderWithMenu from '../components/headerMenu';
+
 
 const Calendario: React.FC = () => {
     return (
-        <SafeAreaView style={styles.container}>
-            <CalendarComponent />
-        </SafeAreaView>
+        <>
+            <HeaderWithMenu/>
+            <SafeAreaView style={styles.container}>
+                <CalendarComponent />
+            </SafeAreaView>
+        </>
     );
 };
 

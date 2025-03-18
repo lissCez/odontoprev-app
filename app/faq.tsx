@@ -1,16 +1,16 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import HeaderWithoutMenu from '../components/headerMenuX';
+import HeaderWithMenu from '../components/headerMenu';
 
 const Pacientes = () => {
     return (
         <View>
-            <HeaderWithoutMenu />
+            <HeaderWithMenu />
             <View>
                 <Text style={styles.faqTitle}>FAQ - Perguntas Frequentes</Text>
             </View>
             <View>
-                <View style={styles.button}>
+                <View>
                     <Text style={styles.textStyle}>
                         <Text style={styles.titleStyle}>1. Como posso entrar em contato com o atendimento ao cliente?</Text>
                         Atualmente, não oferecemos um canal de atendimento. A página de chat para atendimento prioritário está em desenvolvimento e será disponibilizada em breve. Pedimos desculpas pela inconveniência e agradecemos pela sua compreensão.

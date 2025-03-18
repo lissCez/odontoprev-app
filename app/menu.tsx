@@ -13,12 +13,12 @@ const configuracoesIMG = require("../assets/Settings.png");
 
 const Pacientes = () => {
     return (
-        <View>
+        <>
             <HeaderWithoutMenu />
             <View>
                 <Text style={styles.menuTitle}>Menu</Text>
             </View>
-            <View>
+            <View style={styles.menuDirection}>
                 <View style={styles.images}>
                     <Link href='perfil'>
                         <Image source={perfilIMG} style={styles.menuIcons}></Image>
@@ -42,6 +42,7 @@ const Pacientes = () => {
                         <Image source={configuracoesIMG} style={styles.menuIcons}></Image>
                     </Link>
                 </View>
+
                 <View style={styles.links}>
                     <Link href='/calendario'>
                         <Text>Calendário</Text>
@@ -65,21 +66,26 @@ const Pacientes = () => {
                         <Text>Configurações</Text>
                     </Link>
                 </View>
-
+            
             </View>
+        <View>
             <View style={styles.buttonContainer}>
                 <Pressable style={styles.button}>
                     <Text style={styles.buttonText}>Sair</Text>
                 </Pressable>
             </View>
-
         </View>
+    </>
     )
 }
 
 export default Pacientes
 
 const styles = StyleSheet.create({
+    menuDirection:{
+        flex: 0,
+        flexDirection: "row"
+    },
     menuTitle: {
         fontFamily: 'NotoSans_Condensed',
         fontWeight: 500,
@@ -87,7 +93,8 @@ const styles = StyleSheet.create({
         lineHeight: 29,
         color: '#0066FF',
         marginTop: 19,
-        marginLeft: 38
+        marginLeft: 38,
+        marginBottom: 20
     },
     images: {
         marginLeft: 24,
@@ -95,7 +102,8 @@ const styles = StyleSheet.create({
     },
     links: {
         marginLeft: 24,
-        gap: 36
+        gap: 36,
+        justifyContent: 'center'
     },
     menuLinkName: {
         fontFamily: 'NotoSans_Regular',
@@ -122,8 +130,7 @@ const styles = StyleSheet.create({
         paddingTop: 7
     },
     buttonContainer: {
-        position: 'absolute',
-        bottom: 50,
+        top: 50,
         left: 0,
         right: 0,
         alignItems: 'center',
