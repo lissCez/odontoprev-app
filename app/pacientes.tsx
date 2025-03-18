@@ -14,6 +14,27 @@ const Pacientes = () => {
             localNascimento="São Paulo, SP"
             dataNascimento="10/05/1990"
         /> 
+        <PatientCard
+            nome="João da Silva"
+            sexo="Masculino"
+            naturalidade="Brasileiro"
+            localNascimento="São Paulo, SP"
+            dataNascimento="10/05/1990"
+        />
+        <PatientCard
+            nome="João da Silva"
+            sexo="Masculino"
+            naturalidade="Brasileiro"
+            localNascimento="São Paulo, SP"
+            dataNascimento="10/05/1990"
+        /> 
+        <PatientCard
+            nome="João da Silva"
+            sexo="Masculino"
+            naturalidade="Brasileiro"
+            localNascimento="São Paulo, SP"
+            dataNascimento="10/05/1990"
+        /> 
     </View>
   )
 }
