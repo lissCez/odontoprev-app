@@ -11,7 +11,7 @@ const chatIMG = require("../assets/chat_bubble.png");
 const globoIMG = require("../assets/globe.png");
 const configuracoesIMG = require("../assets/Settings.png");
 
-const Pacientes = () => {
+const Menu = () => {
     return (
         <>
             <HeaderWithoutMenu />
@@ -44,14 +44,14 @@ const Pacientes = () => {
                 </View>
 
                 <View style={styles.links}>
+                    <Link href='/perfil'>
+                        <Text>Perfil</Text>
+                    </Link>
                     <Link href='/calendario'>
                         <Text>Calendário</Text>
                     </Link>
-                    <Link href='pacientes'>
-                        <Text>Lista de Pacientes</Text>
-                    </Link>
-                    <Link href='perfil'>
-                        <Text>Perfil</Text>
+                    <Link href='/pacientes'>
+                        <Text>Pacientes</Text>
                     </Link>
                     <Link href='/'>
                         <Text>Chat</Text>
@@ -59,7 +59,7 @@ const Pacientes = () => {
                     <Link href='/faq'>
                         <Text>Perguntas Frequentes</Text>
                     </Link>
-                    <Link href='/concientize_se'>
+                    <Link href='/'>
                         <Text>Concientize-se</Text>
                     </Link>
                     <Link href='/'>
@@ -79,7 +79,7 @@ const Pacientes = () => {
     )
 }
 
-export default Pacientes
+export default Menu
 
 const styles = StyleSheet.create({
     menuDirection:{
